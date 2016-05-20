@@ -10,20 +10,25 @@ Mamy wejściowe parametry:
 - Agility
 - Luck
 
-Oraz mamy etapy życia:
+#Oraz mamy etapy życia:
 
-Miejsce Urodzenia 
+##Miejsce Urodzenia
+
 - Północna Ameryka
 - Południowa Ameryka
 - Europa
 - Azja
 - Australia
 - Afryka
-Szkoła
+
+## Szkoła
+
 * Wyniki w nauce
 * Ulubiony przedmiot
 * Pozycja w społeczeństwie
-hobby
+
+##hobby
+
 * Sport (SEA) [SEA+]
 * Taniec (CA) (CA+)
 * Ekstremalne (...
@@ -31,13 +36,16 @@ hobby
 * Spokojne, domowe hobby
 * Muzyka
 * Inne spokojne
+
 Uniwersytet 
+
 * Humanitarny
 * Prawny
 * Techniczny
 * Medyczny 
 
 Przyzwyczajenia
+
 * Alkohol
 * Palenie
 * Komputerowa zależność
