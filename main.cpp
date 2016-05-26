@@ -1,7 +1,10 @@
-#include "Person.hpp"
+#include "Random.hpp"
+#include "Life.hpp"
 #include <iostream>
 
 int main(int argc, const char * argv[]) {
-    Person Alex;
-    
+    Random Person;
+    Life life;
+    Person.setlife(life.chooseSchoolLevel(Person.getArrayOfParametrs()));
+    std::cout<<Person.getLife();
 }
