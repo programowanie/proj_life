@@ -9,10 +9,10 @@ using namespace std;
 
 class Life
 {
-    string *placeOfBirth = new string[6];
+    string placeOfBirth[6] = {"Northen America","Southen America","Africa","Europe","Australia","Asia"};
     string schoolLevel[3] = {"high","mid","low"};
-    string schoolFavouriteSubject[3]={"math","languages","chemistry"};
-    string schoolSocietyPosition[3]={"leader","shy"};
+    string schoolFavouriteSubject[3] = {"math","languages","chemistry"};
+    string schoolSocietyPosition[3] = {"leader","shy"};
     int random (int a, int b);
     
 public:
