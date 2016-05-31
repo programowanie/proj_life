@@ -9,19 +9,21 @@ using namespace std;
 
 class Life
 {
-    string *placeOfBirth = new string[6];
+    string placeOfBirth[6] = {"Northen America","Southen America","Africa","Europe","Australia","Asia"};
     string schoolLevel[3] = {"high","mid","low"};
     string schoolFavouriteSubject[3]={"math","languages","chemistry"};
-    string schoolSocietyPosition[3]={"leader","shy"};
-    int random (int a, int b);
+    string schoolSocietyPosition[3]={"leader","shy","nnormal"};
+    string hobbies[8][9];
+    int random (int a);
+    bool desigion (int p1,int r1, int p2, int r2);
+    
     
 public:
     Life();
     string choosePlaceOfBirth ();
     string chooseSchoolLevel (int param[]);
-    string chooseSchoolFavouriteSubject(int param[]);
+    string chooseSchoolFavouriteSubject(int *param1);
     string chooseSocietyPosition(int param[]);
-    bool make (int n, int a);
 };
 
 #endif /* Life_hpp */
