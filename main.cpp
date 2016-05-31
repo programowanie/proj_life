@@ -1,13 +1,20 @@
-#include "Random.hpp"
+#include "Person.hpp"
 #include "Life.hpp"
 #include <iostream>
 
 int main(int argc, const char * argv[]) {
-    Random Person;
+    srand(time(NULL));
 
-    Life life;
-
-    Person.setlife(life.chooseSchoolLevel(Person.getArrayOfParametrs()));
-
-    std::cout << Person.getLife();
+    
+    Person Person;
+    Life Life;
+    
+    Person.setlife(Life.choosePlaceOfBirth());
+    Person.setlife(Life.chooseSchoolLevel(Person.getArrayOfParametrs()));
+    Person.setlife(Life.chooseSchoolFavouriteSubject(Person.getArrayOfParametrs()));
+    Person.setlife(Life.chooseSocietyPosition(Person.getArrayOfParametrs()));
+    
+    std::cout<<Person.getLife();
+    
+    
 }
