@@ -5,13 +5,16 @@
 
 
 Life::Life() {
-    ifstream file("Hobbies.txt");
-    char * saveptr;
-    for (int i=0; i<=8; i++) {
-        
-        string s;
-        getline(file, s, ',');
+    string a[6]={"Sport.txt","Dance.txt","Extreme.txt","Active.txt","Needlework.txt"};
+    for (int j=0; j<=6; j++) {
+        ifstream file(a[j]);
+        for (int i=0; i<=8; i++) {
+            if (file.is_open()) {
+                getline(file,hobbies[j][i],'\n');
+                std::cout<<hobbies[j][i]<<endl;
+            }
         }
+        file.close();
     }
 };
 
